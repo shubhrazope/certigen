@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certigen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Student Achievement Entry</h1>
+    <div id="studentForm">
+      <label for="studentName">* Full Name:</label>
+      <input type="text" id="studentName" name="studentName" required />
+
+      <label for="course">* Course/Program:</label>
+      <input type="text" id="course" name="course" />
+
+      <label for="achievement">Achievement:</label>
+      <textarea
+        id="achievement"
+        name="achievement"
+        placeholder="Enter details of the Student's Achievement (for reference only)"
+      ></textarea>
+
+      <label for="date">* Date of Achievement:</label>
+      <input type="date" id="date" name="date" />
+
+      <button type="submit" onclick="submitForm(event)" id="submit-btn">
+        Submit
+      </button>
+
+      <p id="result" class="hidden"></p>
+    </div>
+
+    <hr />
+
+    <h2>Admin Panel</h2>
+
+    <label for="search">Search by Student ID or Name:</label>
+    <input
+      type="text"
+      id="search"
+      name="searchId"
+      placeholder="Search by Student Name or Course or Date"
+    />
+    <button id="searchBtn" onclick="searchData()">Search</button>
+    <button id="clearBtn" onclick="clearSearch()">Clear</button>
+
+    <table border="1" id="studentTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Achievement</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody"></tbody>
+    </table>
+
+    <div id="certificate-container" class="hidden">
+        <button id="close-certificate" onclick="closeCertificate()">✖</button>
+      <div class="certificate" id="certificate-content">
+        <h1>Certificate of Achievement</h1>
+        <p class="institute">ABC Institute of Technology</p>
+        <p class="subtitle">This is to certify that</p>
+        <div class="student-name" id="cert-name">[Student Name]</div>
+        <p class="content">
+          has successfully completed the course<br />
+          <span class="bold" id="cert-course">[Course Name]</span><br />
+          and has demonstrated exceptional performance and dedication.
+        </p>
+        <p class="date">Date: <span id="cert-date">[DD/MM/YYYY]</span></p>
+        <div class="footer">
+          <div>_______________________<br />Signature</div>
+          <div>_______________________<br />Seal / Stamp</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

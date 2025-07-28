@@ -1,0 +1,231 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+h1,
+h2 {
+  color: #ffffff;
+}
+
+#studentForm {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+#studentForm label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+#studentForm input[type="text"],
+#studentForm input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#studentForm button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#studentForm button:hover {
+  background-color: #206491;
+  transition: background-color 0.3s ease;
+}
+
+hr {
+  margin: 40px 0;
+  border: none;
+  height: 1px;
+  background-color: #444;
+}
+
+#search {
+  padding: 8px;
+  font-size: 14px;
+  width: 300px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #fff;
+  margin-right: 10px;
+}
+
+#searchBtn,
+#clearBtn {
+  padding: 8px 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#searchBtn:hover,
+#clearBtn:hover {
+  background-color: #1d8348;
+  transition: background-color 0.3s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  color: #f5f5f5;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #2a2a2a;
+}
+
+td button {
+  padding: 6px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+td button:hover {
+  background-color: #206491;
+  transition: background-color 0.3s ease;
+}
+
+#certificate-container {
+  position: relative;
+  margin-top: 60px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#certificate-container .certificate {
+  width: 900px;
+  background: #fffdf5;
+  padding: 60px 50px;
+  border: 12px double #444;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#certificate-container h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+#certificate-container .institute {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+#certificate-container .subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#certificate-container .student-name {
+  font-size: 36px;
+  font-family: "Great Vibes", cursive;
+  margin: 10px 0;
+  color: #111;
+}
+
+#certificate-container .content {
+  font-size: 18px;
+  margin: 10px 0 30px 0;
+  color: #333;
+}
+
+#certificate-container .content .bold {
+  font-weight: bold;
+}
+
+#certificate-container .date {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+#certificate-container .footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+#certificate-container .footer div {
+  font-size: 16px;
+  text-align: center;
+  color: #444;
+}
+
+#close-certificate {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#close-certificate:hover {
+  color: #670404;
+}
+
+.hidden {
+  display: none !important;
+}
